@@ -1,0 +1,298 @@
+/* CONFIGURAÇÕES GERAIS DA PÁGINA */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f8f5;
+  color: #2e3d32;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* CABEÇALHO */
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #d4e8d9;
+  padding: 15px 20px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LISTA DE LINKS DO MENU */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+/* LINKS DO MENU */
+.navbar a {
+  text-decoration: none;
+  color: #2b5b3b;
+}
+
+/* EFEITO AO PASSAR O MOUSE PELOS LINKS */
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* DESTAQUE DA PÁGINA ATUAL */
+nav a.ativo {
+  font-weight: bold;
+  color: #2b5b3b;
+  border-bottom: 2px solid #2b5b3b;
+}
+
+/* LOGOTIPO */
+.logo a {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CONTAINER DA PÁGINA SOBRE */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* CARTÕES INFORMATIVOS DA PÁGINA SOBRE */
+.bloco-info {
+  background: #eaf4ed;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* TÍTULOS DOS CARTÕES INFORMATIVOS */
+.bloco-info h2 {
+  margin-top: 0;
+  color: #2b5b3b;
+  font-size: 20px;
+}
+
+/* TÍTULO PRINCIPAL DA PÁGINA DE CHÁS */
+.page-title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+/* CONTAINER DA PESQUISA E DA LISTA DE CHÁS */
+.container-página {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+/* COLUNA LATERAL DA PESQUISA */
+.sidebar {
+  flex: 0 0 270px;
+  min-width: 0;
+}
+
+/* CARTÃO VISUAL DA PESQUISA */
+.pesquisa-card {
+  background-color: #eaf4ed;
+  border: 1px solid #d4e8d9;
+  border-radius: 12px;
+  padding: 22px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(43, 91, 59, 0.08);
+}
+
+/* TÍTULO DO PAINEL DE PESQUISA */
+.pesquisa-card h2 {
+  color: #2b5b3b;
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+/* TEXTOS DO PAINEL DE PESQUISA */
+.pesquisa-card p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* RÓTULO DO CAMPO DE PESQUISA */
+.pesquisa-card label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* CAMPO DE PESQUISA */
+.search-input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #b8cfbe;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #2e3d32;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* DESTAQUE DO CAMPO QUANDO ESTÁ SELECIONADO */
+.search-input:focus {
+  border-color: #2b5b3b;
+  box-shadow: 0 0 0 3px rgba(43, 91, 59, 0.15);
+}
+
+/* MENSAGEM DOS RESULTADOS DA PESQUISA */
+#mensagem-busca {
+  margin: 12px 0 0;
+  color: #2b5b3b;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+/* ÁREA QUE CONTÉM A LISTA DE CHÁS */
+.lista-chas {
+  flex: 1;
+  min-width: 0;
+}
+
+/* CARTÃO INDIVIDUAL DE CADA CHÁ */
+.cha-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e9e2;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(43, 91, 59, 0.06);
+}
+
+/* TÍTULOS DOS CHÁS */
+.cha-card h2 {
+  color: #2b5b3b;
+  margin-top: 0;
+}
+
+/* IMAGENS DOS CHÁS */
+.cha-card img {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+/* DESCRIÇÕES DOS CHÁS */
+.cha-card p {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* SEÇÃO PRINCIPAL DA PÁGINA INICIAL */
+.hero-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TÍTULO DA SEÇÃO PRINCIPAL */
+.hero-content h1 {
+  color: #2b5b3b;
+}
+
+/* CONTEÚDO PRINCIPAL DA PÁGINA INICIAL */
+.main-content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ESTILOS COMPARTILHADOS DOS CARTÕES INICIAIS */
+.welcome-card,
+.warning-card {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* CARTÃO DE BOAS-VINDAS */
+.welcome-card {
+  background-color: #eaf4ed;
+}
+
+/* CARTÃO DE AVISO */
+.warning-card {
+  background-color: #fff4d6;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #2b5b3b;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* ESPAÇAMENTO DOS PARÁGRAFOS DO RODAPÉ */
+footer p {
+  margin: 5px 0;
+}
+
+/* AJUSTES PARA CELULARES E TELAS MENORES */
+@media (max-width: 768px) {
+  /* Organiza a pesquisa acima da lista de chás */
+  .container-página {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  /* Faz a pesquisa ocupar a largura disponível */
+  .sidebar {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Reduz o espaçamento interno do painel */
+  .pesquisa-card {
+    padding: 18px;
+  }
+
+  /* Faz a lista de chás ocupar toda a largura */
+  .lista-chas {
+    width: 100%;
+  }
+
+  /* Reduz o espaçamento dos cartões dos chás */
+  .cha-card {
+    padding: 18px;
+  }
+
+  /* Organiza o menu verticalmente */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Organiza os links do menu em coluna */
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
